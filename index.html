@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Darkwiz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Effect -->
+    <div class="background-glow"></div>
+
+    <div class="login-container">
+
+        <!-- Logo Circle -->
+        <div class="logo-circle">
+
+            <div class="logo-ring"></div>
+
+            <img src="image/Dark.png" alt="Darkwiz">
+
+        </div>
+
+        <!-- Brand -->
+        <div class="brand-name">
+            DARKWIZ
+        </div>
+
+        <h2>Hello Partner!</h2>
+
+        <p class="description">
+            Welcome to DarkwizStore. Enter your key to continue.
+        </p>
+
+        <!-- KEY INPUT -->
+        <div class="input-box">
+
+            <input
+                type="text"
+                id="key"
+                placeholder="Enter your key"
+                autocomplete="off"
+            >
+
+            <span class="key-icon">🔑</span>
+
+        </div>
+
+        <!-- LOGIN -->
+        <button onclick="login()">
+
+            <span class="login-icon">↪</span>
+
+            Login
+
+        </button>
+
+        <!-- MESSAGE -->
+        <div id="error"></div>
+
+        <!-- Bottom -->
+        <div class="bottom-icons">
+
+            <span>◈</span>
+            <span>●</span>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

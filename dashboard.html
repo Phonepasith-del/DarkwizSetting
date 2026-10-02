@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Darkwiz Settings</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         DASHBOARD
+    ========================== -->
+
+    <div class="dashboard" id="dashboardPage">
+
+        <!-- HEADER -->
+
+        <div class="top">
+
+            <div class="brand">
+
+                <img
+                    src="image/Dark.png"
+                    alt="Darkwiz"
+                >
+
+                <div>
+                    <h1>DARKWIZ</h1>
+                    <span>Settings</span>
+                </div>
+
+            </div>
+
+            <div class="online">
+                <i></i>
+                ONLINE
+            </div>
+
+        </div>
+
+
+        <!-- MODE LIST -->
+
+        <div class="mode-list">
+
+
+            <!-- LOW -->
+
+            <div
+                class="mode"
+                data-mode="Low"
+                onclick="selectMode(this)"
+            >
+
+                <div class="mode-image">
+
+                    <img
+                        src="image/Darkwiz Cue Showcase.png"
+                        alt="Low"
+                    >
+
+                </div>
+
+                <div class="mode-info">
+
+                    <h3>Low</h3>
+
+                    <p>Better Performance</p>
+
+                    <span class="selected-text">
+                        ACTIVE
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- MED -->
+
+            <div
+                class="mode"
+                data-mode="Med"
+                onclick="selectMode(this)"
+            >
+
+                <div class="mode-image">
+
+                    <img
+                        src="image/Darkwiz Cue Showcase.png"
+                        alt="Med"
+                    >
+
+                </div>
+
+                <div class="mode-info">
+
+                    <h3>Med</h3>
+
+                    <p>Roleplay Only</p>
+
+                    <span class="selected-text">
+                        ACTIVE
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- HIGH -->
+
+            <div
+                class="mode"
+                data-mode="High"
+                onclick="selectMode(this)"
+            >
+
+                <div class="mode-image">
+
+                    <img
+                        src="image/Darkwiz Cue Showcase.png"
+                        alt="High"
+                    >
+
+                </div>
+
+                <div class="mode-info">
+
+                    <h3>High</h3>
+
+                    <p>Roleplay & Low FPS</p>
+
+                    <span class="selected-text">
+                        ACTIVE
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- SUPER -->
+
+            <div
+                class="mode"
+                data-mode="Super"
+                onclick="selectMode(this)"
+            >
+
+                <div class="mode-image">
+
+                    <img
+                        src="image/Darkwiz Cue Showcase.png"
+                        alt="Super"
+                    >
+
+                </div>
+
+                <div class="mode-info">
+
+                    <h3>Super</h3>
+
+                    <p>High Training</p>
+
+                    <span class="selected-text">
+                        ACTIVE
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BUTTONS -->
+
+        <div class="buttons">
+
+            <button
+                class="select-button"
+                onclick="runMode()"
+            >
+
+                <span> Select Mode</span>
+
+                <span class="arrow">→</span>
+
+            </button>
+
+
+            <button
+                class="reset-button"
+                onclick="resetSettings()"
+            >
+
+                ↻ Reset Settings
+
+            </button>
+
+        </div>
+
+
+        <!-- STATUS -->
+
+        <div
+            id="status"
+            class="status"
+        ></div>
+
+    </div>
+
+
+
+    <!-- =========================
+         LOADING SCREEN
+    ========================== -->
+
+    <div
+        class="loading-screen"
+        id="loadingScreen"
+    >
+
+        <div class="loader">
+
+            <div class="loader-ring ring-1"></div>
+            <div class="loader-ring ring-2"></div>
+            <div class="loader-ring ring-3"></div>
+            <div class="loader-ring ring-4"></div>
+            <div class="loader-ring ring-5"></div>
+
+            <div class="loader-center"></div>
+
+        </div>
+
+
+        <div class="loading-title">
+            Initializing...
+            <span>This won't take long.</span>
+        </div>
+
+
+        <div
+            class="loading-subtitle"
+            id="loadingSubtitle"
+        >
+            Loading Mode
+        </div>
+
+    </div>
+
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>
